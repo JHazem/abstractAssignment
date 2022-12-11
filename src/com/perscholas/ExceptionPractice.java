@@ -30,20 +30,21 @@ public class ExceptionPractice {
 	    public static void main(String[] args) {
 	        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
 	    	Scanner num = new Scanner(System.in);
-	        System.out.println("Enter your values : ");
+	        System.out.println("Enter two values for numerator and denominator: ");
 	     
 
 	        try{
 	            int x = num.nextInt();
 	            int  y = num.nextInt();
 	            int result = x / y ;
-	            
+	            System.out.println(result);
 	        }catch(ArithmeticException exc){
 	            System.out.println("java.lang.ArithmeticException: / by zero");
 	        }
 	        catch(InputMismatchException e) {
 	            System.out.println("java.util.InputMismatchException");
 	        }
+	        
 	        
 	    }
 
